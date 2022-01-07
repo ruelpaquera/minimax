@@ -9,14 +9,14 @@ Package.onUse(function (api) {
 
   // TODO: remove underscore deps _.each (used once)
 
-  api.versionsFrom('1.0');
+  // api.versionsFrom('1.0');
 
   api.use([
-    'underscore@1.0.0',
-    'ejson@1.0.0'
+    'underscore',
+    'ejson'
   ], ['client', 'server']);
 
-  api.use(['ground:dictionary@0.2.1'], ['client', 'server']);
+  api.use(['ground:dictionary'], ['client', 'server']);
 
   api.export('MiniMax');
 
